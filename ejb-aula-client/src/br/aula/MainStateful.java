@@ -6,11 +6,23 @@ import javax.swing.JOptionPane;
 
 import br.model.Produto;
 
-public class MainStateful {
+public class MainStateful extends MinhaAplicacao{
 	
-	public static void main(String[] args) {
+	public static void main(String[] args){
+		try {
+			MinhaAplicacao window = new MinhaAplicacao();
+			window.frame.setVisible(true);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		MainStateful ms = new MainStateful();
 		ms.testEJB();
+	}
+	
+	public MainStateful() {
+		super();
+		System.out.println("teste");
+		testEJB();
 	}
 
 	private void testEJB() {

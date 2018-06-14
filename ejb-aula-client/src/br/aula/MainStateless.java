@@ -2,8 +2,10 @@ package br.aula;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
+import javax.swing.JFrame;
 
 public class MainStateless {
+	
 	
 	public static void main(String[] args) {
 		MainStateless ms = new MainStateless();
